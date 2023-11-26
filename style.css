@@ -28,7 +28,7 @@ div{
 
 
 .container img {
-  width: 22vw; /* Makes the image fill the circular container */
+  width: 25vw; /* Makes the image fill the circular container */
   height: auto; /* Preserves the image's aspect ratio */
   border-radius: 50%; /* Makes the image itself circular */
   display: block; /* Ensures image behaves like a block element */
@@ -88,7 +88,6 @@ div{
 
   text-align: center;
   
-  flex-grow: 1;
   font-style: cursive;
 }
 
