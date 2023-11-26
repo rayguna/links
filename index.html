@@ -1,39 +1,142 @@
-<body>
-  <div class="banner">
-    <img src="caffeine.jpg" alt="A Caffeine Molecule">
-  </div>
+<!DOCTYPE html>
 
-  <div class="name">
-    Ray Gunawidjaja
-  </div>
+<html>
+  <head>
+    <title>reimagined-space</title> 
 
-  <div class="social-icons">
-    <a href="https://github.com/rayguna" target="_blank">
-      GitHub
-    </a>
-  </div>
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        background-color: hsl(177, 29%, 28%);
+        background-image: url("thumbnails/clouds.png");
+        background-repeat: no-repeat;
+        text-align:center;
+      }
 
-  <div class="link">
-    <img
-      src="#">
+      p {
+        font-style: oblique;
+        display: block;
+      }
 
-    <a target="_blank" href="#">First</a>
-  </div>
+      div{
+        display:block;
+        text-align: center;
+      }
 
-  <div class="link">
-    <img src="#">
+      .container img {
+        display: flex;
+        justify-content: center;
+        width: 15%;
+        height: 15%;
+      }
 
-    <a target="_blank"
-      href="#">Second</a>
-  </div>
+      .name{
+        font-family: cursive;
+        font-weight: bold;
+        display: flex;
+        justify-content: center;
+        color:gold;
+      }
 
-  <div class="link">
-    <img
-      src="#">
+      .icons{
+        color: orange;
+      }
 
-    <a target="_blank" href="#">A
-      Third</a>
-  </div>
+      .link{
+        display:flex;
+        color: purple;
+        border-radius: 128px;
+        border-block-style: solid;
+        border-block-color: pink;
+        width: 150px;
+        padding: 10px;
+        border: 10px;
+        margin:10px;
+        background-color: aqua;
+        justify-content: center;
+        align-self: center;
+      }
 
-  <!-- Etc, for as many links as you want -->
-</body>
+      .link a {
+      color:brown;
+      text-decoration: none;
+      text-align: center;
+      flex-grow: 1;
+      font-style: cursive;
+      }
+
+      .banner {
+      display: flex;
+      justify-content: center;
+      }
+
+      .banner-image {
+      width: 128px;
+      height: 128px;
+      object-fit: cover;
+      border-radius: 128px;
+      }
+
+      .items {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      max-width: 640px;
+      flex-grow: 1;
+      }
+
+      //*
+        * {
+      border: thin red solid;
+      }        
+      *//
+      
+    </style>
+
+
+  </head>
+
+  <body>
+    <div class="center-img">
+      <img src="thumbnails/caffeine.jpg" alt="Caffeine">
+    </div>
+  
+    <div class="name">
+      Ray Gunawidjaja
+    </div>
+
+    <p>
+      "It only takes a sip of caffeine to ignite the day."
+    </p>
+  
+    <div class="social-icons">
+      <a href="https://github.com/rayguna" target="_blank" class="banner-image">
+        GitHub
+      </a>
+    </div>
+  
+    <div class="link">
+      <img src="thumbnails/caffeine.jpg">
+  
+      <a target="_blank" href="https://en.wikipedia.org/wiki/Caffeine"> About Caffeine </a>
+    </div>
+  
+    <div class="link">
+      <img src="thumbnails/caffeine.jpg">
+  
+      <a target="_blank" href="https://en.wikipedia.org/wiki/Kopi_luwak"> Kopi Luwak </a>
+    </div>
+  
+    <div class="link">
+      <img src="thumbnails/caffeine.jpg">
+  
+      <a target="_blank" href="https://en.wikipedia.org/wiki/Asian_palm_civet"> Luwak (Civet) </a>
+    </div>
+  
+  </body>
+
+</html>
