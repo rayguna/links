@@ -1,0 +1,89 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: hsl(177, 29%, 28%);
+  background-image: url("thumbnails/clouds.png");
+  background-repeat: no-repeat;
+  text-align:center;
+}
+
+p {
+  font-style: oblique;
+  display: block;
+}
+
+div{
+  display:block;
+  text-align: center;
+}
+
+.container img {
+  display: flex;
+  justify-content: center;
+  width: 15%;
+  height: 15%;
+}
+
+.name{
+  font-family: cursive;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  color:gold;
+}
+
+.icons{
+  color: orange;
+}
+
+.link{
+  display:flex;
+  color: purple;
+  border-radius: 128px;
+  border-block-style: solid;
+  border-block-color: pink;
+  width: 150px;
+  padding: 10px;
+  border: 10px;
+  margin:10px;
+  background-color: aqua;
+  justify-content: center;
+  align-self: center;
+}
+
+.link a {
+color:brown;
+text-decoration: none;
+text-align: center;
+flex-grow: 1;
+font-style: cursive;
+}
+
+.banner {
+display: flex;
+justify-content: center;
+}
+
+.banner-image {
+width: 128px;
+height: 128px;
+object-fit: cover;
+border-radius: 128px;
+}
+
+.items {
+display: flex;
+flex-direction: column;
+gap: 30px;
+max-width: 640px;
+flex-grow: 1;
+}
+
+//*
+  * {
+border: thin red solid;
+}        
+*//
