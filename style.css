@@ -1,14 +1,21 @@
 body {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  padding-top: 40px;
-  padding-bottom: 40px;
-  background-color: hsl(177, 29%, 28%);
-  background-image: url("thumbnails/clouds.png");
+  justify-content: center; /* Centers content vertically */
+  align-items: center; /* Centers content horizontally */
+
+  margin-top: 2vw;
+  height: auto; /* Ensures full viewport height */
+  width: auto;
+  font-size: 2.5vw;
+
+  background-image: url("thumbnails/css-pattern-by-magicpattern.png");
+
   background-repeat: no-repeat;
-  text-align:center;
+  background-size: cover;
+  text-align: center;
 }
+
 
 p {
   font-style: oblique;
@@ -20,70 +27,121 @@ div{
   text-align: center;
 }
 
+
 .container img {
-  display: flex;
-  justify-content: center;
-  width: 15%;
-  height: 15%;
+  width: 25vw; /* Makes the image fill the circular container */
+  height: auto; /* Preserves the image's aspect ratio */
+  border-radius: 50%; /* Makes the image itself circular */
+  display: block; /* Ensures image behaves like a block element */
+  margin: auto; /* Centers the image horizontally */
 }
 
 .name{
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  font-size: larger;
   font-family: cursive;
   font-weight: bold;
   display: flex;
   justify-content: center;
-  color:gold;
+  color:burlywood;
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
 
 .icons{
   color: orange;
 }
 
+/* CSS for simple letter-by-letter animation */
+@keyframes revealText {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .link{
   display:flex;
-  color: purple;
-  border-radius: 128px;
-  border-block-style: solid;
-  border-block-color: pink;
-  width: 150px;
-  padding: 10px;
-  border: 10px;
-  margin:10px;
-  background-color: aqua;
+
+  border-radius: 128vh;
+  
+  width: 40vw;
+  height: 5vh;
+
+  padding: 1vw;
+  border: 1vw;
+  margin: 1vw;
+  
+  /*background-color: aqua;*/
+  background-image: linear-gradient(#271300,#9c6f44);
   justify-content: center;
   align-self: center;
+  align-items: center; /* Center vertically */
 }
 
 .link a {
-color:brown;
-text-decoration: none;
-text-align: center;
-flex-grow: 1;
-font-style: cursive;
+  color:#271300;
+  text-decoration: none;
+
+  text-align: center;
+  
+  flex-grow: 1;
+  font-style: cursive;
+}
+
+a:hover {
+  color: #9c6f44;
 }
 
 .banner {
-display: flex;
-justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
-.banner-image {
-width: 128px;
-height: 128px;
-object-fit: cover;
-border-radius: 128px;
+.banner img {
+  width: 4vw; /* 25% of the viewport width */
+  height: auto; /* 15% of the viewport height */
+  object-fit: cover;
+  border-radius: 50%; /* Adjust the border radius for rounded ends */
+  display: block; /* Ensures image behaves like a block element */
 }
 
-.items {
-display: flex;
-flex-direction: column;
-gap: 30px;
-max-width: 640px;
-flex-grow: 1;
+<!--https://www.geeksforgeeks.org/how-to-make-a-vertical-wavy-text-line-using-html-and-css/-->
+.wavy { 
+  position: relative; 
+} 
+
+.wavy span { 
+  position: relative; 
+  display: inline-block; 
+  color: #fff; 
+  font-size: auto; 
+  text-transform: uppercase; 
+  animation: animate 2s ease-in-out infinite; 
+  animation-delay: calc(0.1s * var(--i)); 
+} 
+
+@keyframes animate { 
+  0% { 
+      transform: translateY(0px); 
+  } 
+
+  20% { 
+      transform: translateY(-20px); 
+  } 
+
+  40%, 
+  100% { 
+      transform: translateY(0px); 
+  } 
+} 
 }
 
-//*
-  * {
+
+/*  * {
 border: thin red solid;
-}        
-*//
+} */       
